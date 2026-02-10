@@ -17,3 +17,18 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = 'none';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.animar-scroll');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'toActive 1.5s ease-in-out 1';
+            } else {
+                entry.target.style.animation = 'none';
+            }
+        });
+    }, { threshold: 0.1 }); // Ativa quando 10% da seção estiver visível
+
+    sections.forEach(section => observer.observe(section));
+});
