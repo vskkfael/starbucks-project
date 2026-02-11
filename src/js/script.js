@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.animation = 'none';
             }
         });
-    }, { threshold: 0.01 }); // Ativa quando 10% da seção estiver visível
+    }, { threshold: 0.1 }); // Ativa quando 10% da seção estiver visível
 
     sections.forEach(section => observer.observe(section));
 });
