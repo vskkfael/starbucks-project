@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@keyframes toActive {
+        0% {
+            transform: translate(0%, 20%);
+            opacity: 0;
+        }
+    }

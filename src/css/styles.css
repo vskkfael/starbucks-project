@@ -5,6 +5,7 @@
 @import url('../css/navbar.css');
 @import url('../css/home.css');
 @import url('../css/footer.css');
+@import url('../css/animations.css');
 
 * {
     padding: 0;
@@ -134,12 +135,6 @@ a.btn {
     }
         .about-info:last-child {
             order: 3;
-        }
-}
-    @keyframes toActive {
-        0% {
-            transform: translate(0%, 20%);
-            opacity: 0;
         }
     }
 

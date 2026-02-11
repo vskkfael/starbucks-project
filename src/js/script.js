@@ -1,6 +1,6 @@
 const mobileBtn = document.querySelector('.btn-mobile');
-const navLinks = document.getElementById ('nav-links')
-const icon = document.querySelector ('.btn-mobile i')
+const navLinks = document.getElementById ('nav-links');
+const icon = document.querySelector ('.btn-mobile i');
 
 mobileBtn.addEventListener('click', () => {
     navLinks.classList.toggle('show')
@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.animation = 'none';
             }
         });
-    }, { threshold: 0.1 }); // Ativa quando 10% da seção estiver visível
+    }, { threshold: 0.01 }); // Ativa quando 10% da seção estiver visível
 
     sections.forEach(section => observer.observe(section));
 });
+
+
